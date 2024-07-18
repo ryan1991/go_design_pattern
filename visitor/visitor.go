@@ -64,6 +64,9 @@ func (*ServiceRequestVisitor) Visit(customer Customer) {
 	}
 }
 
+/**
+* 可以通过增加Visitor 和Customer来扩展业务逻辑
+ */
 type AnalysisVisitor struct{}
 
 func (*AnalysisVisitor) Visit(customer Customer) {
